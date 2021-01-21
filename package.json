@@ -1,7 +1,7 @@
 {
-  "name": "cra-rescript",
+  "name": "home-v2-rescript",
   "version": "0.1.0",
-  "description": "A Create React App with Rescript support",
+  "description": "Homepage SPA with Rescript",
   "author": {
     "name": "Dmitry Melnikov",
     "email": "d.dash.mv@gmail.com"
