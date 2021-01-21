@@ -84,7 +84,8 @@
     "test": "node scripts/test.js",
     "re:build": "bsb -make-world -clean-world",
     "re:watch": "bsb -make-world -clean-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "dev": "concurrently \"npm run re:watch\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": [
@@ -106,6 +107,7 @@
   },
   "devDependencies": {
     "bs-platform": "^8.4.2",
+    "concurrently": "^5.3.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.22.0",
     "gentype": "^3.42.0",

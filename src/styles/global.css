@@ -26,6 +26,9 @@
   --shadowPlank: 0 0.1rem 0.5rem 0.1rem var(--darkShadow);
   --shadowPlankDM: 0 0.1rem 0.5rem 0.1rem var(--darkShadowDM);
 
+  /* --transition: 0.112s ease-in-out; */
+  --transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  --transitionSlow: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
   font-size: 62.5%;
 }
 
@@ -81,5 +84,30 @@ html {
   .content {
     left: 4rem;
     padding: 2rem 0;
+  }
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 3rem;
+  left: -3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  transform: translateX(-100%);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: unHide, appear;
+  /* animation-delay: ${props => (props.mobile ? '0s' : '1s')}; */
+}
+
+@media (max-width: 499px) {
+  nav {
+    top: 3.9rem;
+    left: 0;
+    border-radius: 0 0.4rem 0.4rem 0;
+    background-color: var(--darkModal);
   }
 }
