@@ -1,0 +1,101 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+  margin: 0 1rem;
+  width: 40%;
+}
+
+@media (max-width: 749px) {
+  .home-column {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 649px) {
+  .home-column {
+    width: 100%;
+    height: inherit;
+    padding: 1rem 3rem;
+  }
+}
+
+.profile-photo {
+  width: 70%;
+  background: rgba(0, 0, 0, 0)
+    url('https://res.cloudinary.com/diciu4xpu/image/upload/v1565120083/home/v2/home/avatar.jpg')
+    no-repeat scroll center center / cover;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  filter: grayscale(1);
+  max-width: 0;
+  animation: stretch 0.5s ease-in-out 0.3s forwards,
+    var(--shadowDropDM) 0.5s ease-in-out 0.3s forwards;
+}
+.profile-photo:hover {
+  filter: grayscale(0);
+}
+
+@media (prefers-color-scheme: light) {
+  .profile-photo {
+    animation: stretch 0.5s ease-in-out 0.3s forwards,
+      var(--shadowDrop) 0.5s ease-in-out 0.3s forwards;
+  }
+  .profile-photo:hover {
+    box-shadow: var(--shadowHover);
+  }
+}
+
+@media (max-width: 999px) {
+  .profile-photo {
+    width: 80%;
+  }
+}
+@media (max-width: 899px) {
+  .profile-photo {
+    width: 90%;
+  }
+}
+@media (max-width: 699px) {
+  .profile-photo {
+    width: 100%;
+  }
+}
+@media (max-width: 649px) {
+  .profile-photo {
+    width: 50%;
+  }
+}
+@media (max-width: 599px) {
+  .profile-photo {
+    width: 60%;
+  }
+}
+@media (max-width: 499px) {
+  .profile-photo {
+    width: 70%;
+  }
+}
+@media (max-width: 399px) {
+  .profile-photo {
+    width: 80%;
+  }
+}
+@media (max-width: 349px) {
+  .profile-photo {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,43 @@
+.logo {
+  position: fixed;
+  left: 0.5rem;
+  top: 0.8rem;
+  padding: 0.2rem;
+  z-index: 5;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 0;
+  font-weight: 500;
+  font-family: var(--fontSans);
+  color: var(--grey);
+  text-shadow: var(--textShadow);
+  animation: fontTo18 0.5s ease-in-out 1s forwards,
+    appear 1.5s ease-in-out 1s forwards;
+}
+
+.logo::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--grey);
+  transform-origin: center bottom;
+  transform: scaleY(0);
+  transition: transform 0.112s ease-in-out;
+}
+
+@media (hover: hover) {
+  .logo:hover {
+    text-shadow: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: color 0.112s 0.05s ease-in-out;
+  }
+  .logo:hover::before {
+    transform-origin: center top;
+    transform: scaleY(1);
+  }
+}

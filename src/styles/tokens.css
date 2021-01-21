@@ -1,0 +1,11 @@
+.underline {
+  text-decoration: underline;
+}
+
+.background-dark::before {
+  background-color: var(--dark);
+}
+
+.link-disabled {
+  cursor: not-allowed;
+}

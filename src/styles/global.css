@@ -1,0 +1,85 @@
+:root {
+  --white: rgb(247, 247, 247);
+  --whiteTrans: rgba(247, 247, 247, 0.5);
+  --white80: rgba(247, 247, 247, 0.8);
+  --dark: #444;
+  --grey: #707070;
+  --darkShadow: rgba(68, 68, 68, 0.2);
+  --darkShadowDM: rgba(0, 0, 0, 0.2);
+  --dark30: rgba(68, 68, 68, 0.3);
+  --dark30DM: rgba(0, 0, 0, 0.3);
+  --black30: rgba(0, 0, 0, 0.3);
+  --darkModal: rgba(68, 68, 68, 0.9);
+  --accent: #fc8d01;
+  --lightGrey: #efefef;
+
+  --fontSans: Rubik, Helvetica, Arial, sans-serif;
+  --fontSerif: Roboto Slab, Times New Roman, serif;
+
+  --shadow: 0 0.5rem 1rem 0.5rem var(--darkShadow);
+  --shadowDM: 0 0.5rem 1rem 0.5rem var(--darkShadowDM);
+  --shadowActive: 0 0.3rem 0.8rem 0.5rem var(--dark30);
+  --shadowActiveDM: 0 0.3rem 0.8rem 0.5rem var(--dark30DM);
+  --shadowHover: 0 0.3rem 2rem 0.5rem var(--dark30);
+  --textShadow: 0 0.1rem 0.1rem var(--darkShadow);
+  --textShadowDM: 0 0.1rem 0.1rem var(--darkShadowDM);
+  --shadowPlank: 0 0.1rem 0.5rem 0.1rem var(--darkShadow);
+  --shadowPlankDM: 0 0.1rem 0.5rem 0.1rem var(--darkShadowDM);
+
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--fontSans);
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--dark);
+    color: var(--white);
+  }
+}
+
+* {
+  appearance: none;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.05rem;
+  outline: none;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 499px) {
+  .content {
+    left: 0;
+    padding: 2.5rem 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .content {
+    left: 4rem;
+    padding: 2rem 0;
+  }
+}
