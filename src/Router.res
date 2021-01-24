@@ -1,7 +1,7 @@
 @react.component
 let make = () => {
   let {currentView} = Context.StateContext.useState()
-Js.log(currentView)
+
   <main className="content">
     {switch currentView {
     | "HOME" => <Home />

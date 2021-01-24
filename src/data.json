@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "title": "Our Change",
+      "description": "Collection of historical places.",
+      "photo": {
+        "card": [
+          "https://res.cloudinary.com/diciu4xpu/image/upload/v1564834311/home/v2/projects/card__our-change.jpg",
+          "https://res.cloudinary.com/diciu4xpu/image/upload/v1564834311/home/v2/projects/card__our-change_2x.jpg"
+        ],
+        "details": {
+          "s": "https://res.cloudinary.com/diciu4xpu/image/upload/v1564839459/home/v2/projects/details__our-change_s.png",
+          "m": "https://res.cloudinary.com/diciu4xpu/image/upload/v1564839464/home/v2/projects/details__our-change_m.png",
+          "l": "https://res.cloudinary.com/diciu4xpu/image/upload/v1564839480/home/v2/projects/details__our-change_l.png",
+          "xl": "https://res.cloudinary.com/diciu4xpu/image/upload/v1564839481/home/v2/projects/details__our-change_xl.png",
+          "xxl": "https://res.cloudinary.com/diciu4xpu/image/upload/v1564839490/home/v2/projects/details__our-change_xxl.png"
+        }
+      },
+      "details": "A social app for citizens to communicate the issues to the municipality. Created for a client as an MVP, the app bears all the required features for posting illustrated mini-posts with optional solutions as well as votes. Municipality can post news, well as post notes to the users' posts, and users can reply to them. Desktop version for analytics, while opening the app from mobile gives full functionality",
+      "technology": ["react", "redux", "styled", "node", "express", "mongo"],
+      "links": { "deployed": "https://ourchange-dev.herokuapp.com/" }
+    },
+    {
+      "title": "Homepage SPA",
+      "description": "Homepage app",
+      "photo": {
+        "card": [
+          "https://res.cloudinary.com/diciu4xpu/image/upload/v1565386526/home/v2/projects/card__home-app.png",
+          "https://res.cloudinary.com/diciu4xpu/image/upload/v1565386526/home/v2/projects/card__home-app_2x.png"
+        ],
+        "details": {
+          "s": "https://res.cloudinary.com/diciu4xpu/image/upload/v1565387703/home/v2/projects/details__homepage-spa_s.png",
+          "m": "https://res.cloudinary.com/diciu4xpu/image/upload/v1565387705/home/v2/projects/details__homepage-spa_m.png",
+          "l": "https://res.cloudinary.com/diciu4xpu/image/upload/v1565387714/home/v2/projects/details__homepage-spa_l.png",
+          "xl": "https://res.cloudinary.com/diciu4xpu/image/upload/v1565387718/home/v2/projects/details__homepage-spa_xl.png",
+          "xxl": "https://res.cloudinary.com/diciu4xpu/image/upload/v1565387725/home/v2/projects/details__homepage-spa_xxl.png"
+        }
+      },
+      "details": "At certain point faced the need to make a homepage, which will act as a business card and a showcase. It had to reflect... basically me. From the beginning the decision was made not to use templates and work out something different. The result - you are looking at it. The initial mockup was done in Sketch, the working mockup in HTML/CSS. As main tool I used Vue.js (+ Vuex) with SCSS. To simplify dev process, the project is using JSON file with all the data and links to images on Cloudinary. Favicon designed  in Affinity Designer, while the pack with manifest.json done with Image2icon app. Later if has been reworked from ground in React. Styled Components instead of SCSS and React Icons instead of Font Awesome. TypeScript, auto Dark Mode on macOS.",
+      "technology": ["react", "ts", "styled", "ricons"],
+      "links": {
+        "github": "https://github.com/d-mv/home-v2",
+        "deployed": "https://melnikov.dev"
+      }
+    }
+  ]
+}

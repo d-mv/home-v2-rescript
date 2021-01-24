@@ -1,8 +1,8 @@
-type state = {currentView: string, counter: int} // state model
+type state = {currentView: string, counter: int, project: string, modalIsOpen: bool} // state model
 type action = {name: string, payload: string} // action model
 type dispatch = action => unit // dispatch model
 
-let initialState: state = {currentView: "HOME", counter: 0} // initial state
+let initialState: state = {currentView: "HOME", counter: 0, project: "", modalIsOpen: false} // initial state
 
 module StateContext = {
   // initialize context
@@ -44,6 +44,7 @@ module DispatchContext = {
 let reducer = (state, action) => {
   switch action.name {
   | "SET_VIEW" => {...state, currentView: action.payload}
+  | "SET_PROJECT" => {...state, project: action.payload}
   | _ => state
   }
 }
